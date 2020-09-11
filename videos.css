@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.myw_videos_container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+.myw_videos_container .myw_videos_box{
+    position: relative;
+    width: 450px;
+    height: 302px;
+    background: #000000;
+}
+.myw_videos_container .myw_videos_box .myw_videos_videobox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.myw_videos_container .myw_videos_box .myw_videos_videobox video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.myw_videos_container .myw_videos_box .myw_videos_contentbox{
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    right: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(55,55,55);
+    background: rgba(60, 60, 60, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.myw_videos_container .myw_videos_box:hover .myw_videos_contentbox{
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.myw_videos_container .myw_videos_box .myw_videos_contentbox .myw_videos_content{
+    position: relative;
+    padding: 20px 60px;
+    opacity: 0;
+}
+.myw_videos_container .myw_videos_box:hover .myw_videos_contentbox .myw_videos_content{
+    opacity: 1;
+    transition: 0.3s;
+    transition-delay: 0.5s;
+}
+.myw_videos_container .myw_videos_box .myw_videos_contentbox .myw_videos_content h2{
+    margin-top: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 7px;
+    font-family: poppins;
+}
+.myw_videos_container .myw_videos_box .myw_videos_contentbox .myw_videos_content p{
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.myw_videos_container .myw_videos_box .myw_videos_contentbox .myw_videos_content button{
+    background: linear-gradient(90deg,#0162c8, #55e7fc);
+    color: #000;
+    font-weight: 300;
+    padding: 5px;
+    border-radius: 15px; 
+    margin-bottom: 15px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
